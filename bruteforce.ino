@@ -13,11 +13,11 @@ const int wordCount = sizeof(wordList) / sizeof(wordList[0]);
 
 void setup() {
   u8g2.begin();
-  u8g2.setFont(u8g2_font_helvB08_tf);
+  u8g2.setFont(u8g2_font_courB10_tf);
   pinMode(sw_pin, INPUT_PULLUP);
 
   u8g2.clearBuffer();
-  u8g2.setCursor(0,20);
+  u8g2.setCursor(45,35);
   u8g2.print("Ready.");
   u8g2.sendBuffer();
 }
